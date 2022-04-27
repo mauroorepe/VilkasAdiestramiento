@@ -20,6 +20,8 @@ header{
     background-color: #080F0F;
 }
 
+/* agregado de un gradiente en el fondo del main */
+
 main{
     background-image: linear-gradient( to left, #9E2B25, #e06b65);
 }
@@ -60,12 +62,16 @@ ul{
     list-style-type: none;
 }
 
+/* agregado de transition */
+
 a{
     text-decoration: none;
     color: #FFF8F0;
     font-size: 15px;
     transition: all 1s;
 }
+
+/* agregado de hover a los links de navegacion */
 
 a:hover{
     font-size: 25px;
