@@ -15,15 +15,13 @@ body{
 }
 
 header{
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     background-color: #080F0F;
 }
 
-/* agregado de un gradiente en el fondo del main */
-
 main{
-    background-image: linear-gradient( to left, #9E2B25, #e06b65);
+    background-color: #9E2B25;
 }
 
 footer{
@@ -73,9 +71,9 @@ a{
 
 /* agregado de hover a los links de navegacion */
 
-a:hover{
+/* a:hover{
     font-size: 25px;
-}
+} */
 
 /* CLASES */
 .logos{
@@ -103,6 +101,8 @@ a:hover{
 .card{
     display: flex;
     align-items: center;
+    background-color: #9E2B25;
+    border: none;
 }
 
 .fotosCard{
