@@ -15,19 +15,15 @@ body{
 }
 
 header{
-    /* display: flex;
-    justify-content: space-between; */
     background-color: #080F0F;
 }
 
 main{
-    background-color: #9E2B25;
+    background-color: #a49cb8;
 }
 
 footer{
-    display: flex;
     background-color: #080F0F;
-    justify-content: space-between;
 }
 
 h1{
@@ -55,8 +51,6 @@ nav{
 }
 
 ul{
-    display: flex;
-    justify-content: space-evenly;
     list-style-type: none;
 }
 
@@ -66,14 +60,11 @@ a{
     text-decoration: none;
     color: #FFF8F0;
     font-size: 15px;
-    transition: all 1s;
 }
 
-/* agregado de hover a los links de navegacion */
-
-/* a:hover{
-    font-size: 25px;
-} */
+nav{
+    background-color: #080F0F;
+}
 
 /* CLASES */
 .logos{
@@ -86,10 +77,8 @@ a{
 
 .socialHeader{
     display: flex;
-    justify-content: space-evenly;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 10px;
+    align-self: center;
+    margin-right: 2%;
 }
 
 .titulosSecundarios{
@@ -99,26 +88,17 @@ a{
 }
 
 .card{
-    display: flex;
-    align-items: center;
-    background-color: #9E2B25;
+    background-color: #a49cb8;
     border: none;
 }
 
 .fotosCard{
-    height: 300px;
-    border-radius: 10%;
+    width: 8%;
 }
 
 .navFooter{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .socialFooter{
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
