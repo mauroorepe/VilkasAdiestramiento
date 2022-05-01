@@ -88,8 +88,11 @@ nav{
 }
 
 .card{
+    display: flex;
+    flex-direction: row;
     background-color: #a49cb8;
     border: none;
+    margin-top: 3S%;
 }
 
 .fotosCard{
