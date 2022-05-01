@@ -97,9 +97,18 @@ nav{
     width: 8%;
 }
 
-.navFooter{
-}
-
 .socialFooter{
     padding: 20px;
+    width: 200px;
+}
+
+.socialTitle{
+    font-size: 20px;
+    padding-bottom: 3%;
+}
+
+.footerNav{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
 }
