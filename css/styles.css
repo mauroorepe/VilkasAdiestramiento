@@ -74,8 +74,9 @@ nav{
 }
 
 .socialHeader{
-    display: flex;
+    /* display: flex;
     align-self: center;
+    justify-self: flex-end; */
     margin-right: 2%;
 }
 
@@ -94,7 +95,8 @@ nav{
 }
 
 .fotosCard{
-    width: 8%;
+    width: 144px;
+    height: 144px
 }
 
 .socialFooter{
@@ -111,4 +113,20 @@ nav{
     display: flex;
     align-self: center;
     flex-direction: column;
+}
+
+@media (max-width: 575px) {
+    
+}
+
+@media (max-width: 767px) {
+    
+}
+
+@media (max-width: 991px) {
+    
+}
+
+@media (max-width: 1199px) {
+
 }
