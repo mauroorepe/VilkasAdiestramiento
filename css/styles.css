@@ -69,6 +69,19 @@ button:hover{
     background-color: rgba(0, 136, 169, 0.5);
 }
 
+@media (max-width: 430px){
+    .logo{
+        width: 100px;
+    }
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navLinks{
+        margin-bottom: 30px;
+    }
+}
+
 /* main index*/
 
 h1{
@@ -129,6 +142,7 @@ main div div div p{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .piePagina .grupo1 .box figure{
@@ -168,6 +182,19 @@ main div div div p{
     text-align: center;
     color: #fff8f0;
     font-size: 15px;
+}
+
+@media (max-width: 830px) {
+    .logo2{
+        width: 150px;
+    }
+    .piePagina .grupo1 .box figure img{
+        width: 150px;
+    }
+    .grupo1{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* Formulario de contacto */
