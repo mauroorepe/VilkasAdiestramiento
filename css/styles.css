@@ -9,6 +9,7 @@
 
 html{
     font-size: 62.5%;
+    background-color: #080F0F;
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -72,9 +73,9 @@ a{
 }
 
 .socialHeader{
-    /* display: flex;
+    display: flex;
     align-self: center;
-    justify-self: flex-end; */
+    justify-self: flex-end;
     margin-right: 2%;
 }
 
@@ -113,8 +114,9 @@ a{
     flex-direction: column;
 }
 
-/* @media (max-width: 575px) {
-    
+@media (max-width: 575px) {
+    .fotosCard{
+        display: none;}
 }
 
 @media (max-width: 767px) {
@@ -127,7 +129,7 @@ a{
 
 @media (max-width: 1199px) {
 
-} */
+}
 
 #navBar{
     max-width: 80%;
