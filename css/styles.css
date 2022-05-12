@@ -5,120 +5,322 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
 
-/* ETIQUETAS */
-
 html{
     font-size: 62.5%;
+    background-color: #080F0F;
+    padding: 0;
 }
 body{
     font-family: 'Roboto', sans-serif;
+    color: #fff8f0;
 }
+/* header */
 
 header{
     display: flex;
     justify-content: space-between;
-    background-color: #080F0F;
+    align-items: center;
+    padding: 30px 10%;
 }
 
-/* agregado de un gradiente en el fondo del main */
-
-main{
-    background-image: linear-gradient( to left, #9E2B25, #e06b65);
+.logo{
+    cursor: pointer;
+    width: 150px;
 }
 
-footer{
-    display: flex;
-    background-color: #080F0F;
-    justify-content: space-between;
+.logo2{
+    cursor: pointer;
+    width: 250px;
 }
+
+.navLinks{
+    list-style-type: none;
+}
+
+.navLinks li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navLinks li a{
+    text-decoration: none;
+    color: #fff8f0;
+    font-size: 18px;
+    transition: all 0.3s ease 0s;
+}
+
+.navLinks li a:hover{
+    color: #0099a9;
+}
+
+button{
+    text-decoration: none;
+    color: #fff8f0;
+    font-size: 14px;
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s
+}
+
+button:hover{
+    background-color: rgba(0, 136, 169, 0.5);
+}
+
+@media (max-width: 430px){
+    .logo{
+        width: 100px;
+    }
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navLinks{
+        margin-bottom: 30px;
+    }
+}
+
+/* main index*/
 
 h1{
-    text-align: center;
-    color: #FFF8F0;
     font-size: 40px;
-    padding-top: 20px;
+    text-align: left;
+    padding-top: 40px;
+    margin-bottom: 50px;
+    margin-left: 40px;
+    color: #fff8f0;
 }
 
-h2{
-    color: #FFF8F0
+.cards{
+    background-color: #98B9AB;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
 }
 
-p{
-    color: #FFF8F0;
-    font-size: 15px;
+main div div{
+    margin: 40px;
+}
+
+main div div img{
+    width: 250px;
+    height: 220px;
+}
+
+main div div div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main div div div h2{
+    font-size: 25px;
+    color: #080F0F;
+}
+
+main div div div p{
+    font-size: 20px;
     text-align: justify;
     margin: 15px;
 }
 
-nav{
-    width: 30%;
-    margin-top: 30px;
-    margin-right: 30px;
-}
-
-ul{
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
-
-/* agregado de transition */
-
-a{
-    text-decoration: none;
-    color: #FFF8F0;
-    font-size: 15px;
-    transition: all 1s;
-}
-
-/* agregado de hover a los links de navegacion */
-
-a:hover{
-    font-size: 25px;
-}
-
-/* CLASES */
-.logos{
-    width: 120px;
-}
+/* pie de pagina */
 
 .socialMedia{
     width: 30px;
 }
 
-.socialHeader{
-    display: flex;
-    justify-content: space-evenly;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 10px;
+.piePagina{
+    width: 100%;
 }
 
-.titulosSecundarios{
+.piePagina .grupo1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.piePagina .grupo1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.piePagina .grupo1 .box figure img{
+    width: 250px;
+}
+
+.piePagina .grupo1 .box h2{
+    color: #fff8f0;
+    margin-bottom: 10px;
+    margin-right: 65px;
+    margin-left: 75px;
+    font-size: 20px;
+}
+
+.piePagina .grupo1 .box div{
+    margin-right: 65px;
+    margin-left: 75px;
+}
+
+.piePagina .grupo1 .box div img{
+    transition: all 300ms ease;
+}
+
+.piePagina .grupo1 .box div img:hover{
+    width: 40px;
+}
+
+.piePagina .grupo2{
     text-align: center;
     color: #fff8f0;
-    font-size: 25px;
+    font-size: 15px;
 }
 
-.card{
-    display: flex;
-    align-items: center;
+@media (max-width: 830px) {
+    .logo2{
+        width: 150px;
+    }
+    .piePagina .grupo1 .box figure img{
+        width: 150px;
+    }
+    .grupo1{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-.fotosCard{
-    height: 300px;
-    border-radius: 10%;
+/* Formulario de contacto */
+
+body {
+    background: #181818;
+    color: #fff;
+    line-height: 1.6;
+    font-family: 'Quicksand', sans-serif;
 }
 
-.navFooter{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.content {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
 }
 
-.socialFooter{
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.logoContacto {
+    justify-self: center;
+    text-align: center;
+    font-size: 3em;
+    color: #fff8f0;
+}
+
+.logoContacto span {
+    color: #B70E21;
+}
+
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+.contact-form {
+    background: #222222;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+    display: block;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #d63031;
+}
+
+.contact-form form button {
+    background: #B70E21;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #d63031;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+/* CONTACT INFO */
+.contact-info {
+    background: #000;
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+/* LARGE SIZE */
+@media(min-width: 700px) {
+    body {
+        padding: 0 4em;
+    }
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
+    }
+}
+
+@media (max-width: 991px) {
+    main div div img{
+        display: none;
+    }
+    .navLinks li{
+        display: flex;
+        flex-direction: column;
+    }
 }
