@@ -324,3 +324,50 @@ ul {
         flex-direction: column;
     }
 }
+
+/* Grids */
+
+.header{
+    grid-area: header;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'header' 
+        'main' 
+        'footer';
+    grid-column-gap: 10px;
+} 
+
+.main{
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+    'left left middle middle right right';
+}
+
+.left {
+    grid-area: left;
+}
+
+.middle {
+    grid-area: middle;
+}
+
+.right {
+    grid-area: right;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+@media (max-width: 600px) {
+    .main  {
+        grid-template-areas: 
+        'left' 
+        'middle' 
+        'right';
+    }
+}
