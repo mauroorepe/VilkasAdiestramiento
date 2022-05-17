@@ -1,0 +1,333 @@
+$colorPrimario: #181818;
+$ColorSecundario: #fff8f0;
+$ColorTerciario: #B70E21;
+$ColorFormulario: #222222;
+$shadowColor: rgba(255, 255, 255, .3);
+$borderColor: #d63031;
+
+* {
+    margin:0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+html{
+    font-size: 62.5%;
+    background-color: #080F0F;
+    padding: 0;
+}
+
+body{
+    background: $colorPrimario;
+    color: $ColorSecundario;
+    line-height: 1.6;
+    font-family: 'Quicksand', sans-serif;
+}
+// Index Main
+
+h1{
+    font-size: 40px;
+    text-align: left;
+    padding-top: 40px;
+    margin-bottom: 50px;
+    margin-left: 40px;
+    color: #fff8f0;
+}
+
+.cards{
+    background-color: #98B9AB;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+
+main{
+    div{
+        div{
+            margin: 40px;
+            img{
+                width: 250px;
+                height: 220px;
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h2{
+                    font-size: 25px;
+                    color: #080F0F;
+                }
+                p{
+                    font-size: 20px;
+                    text-align: justify;
+                    margin: 15px;
+                }
+            }
+        }
+    }
+}
+
+
+// Header
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo{
+    cursor: pointer;
+    width: 150px;
+}
+
+.logo2{
+    cursor: pointer;
+    width: 250px;
+}
+
+.navLinks{
+    list-style-type: none;
+    li{
+        display: inline-block;
+        padding: 0px 20px;
+        a{
+            text-decoration: none;
+            color: #fff8f0;
+            font-size: 18px;
+            transition: all 0.3s ease 0s;
+            &:hover{
+                color: #0099a9;
+            }
+        }
+    }
+}
+
+button{
+    text-decoration: none;
+    color: #fff8f0;
+    font-size: 14px;
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    &:hover{
+        background-color: rgba(0, 136, 169, 0.5);
+    }
+}
+
+// Footer
+
+.socialMedia{
+    width: 30px;
+}
+
+.piePagina{
+    width: 100%;
+    .grupo1{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        .box{
+            figure{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 250px;
+                }
+            }
+            h2{
+                color: #fff8f0;
+                margin-bottom: 10px;
+                margin-right: 65px;
+                margin-left: 75px;
+                font-size: 20px;
+            }
+            div{
+                margin-right: 65px;
+                margin-left: 75px;
+                img{
+                    transition: all 300ms ease;
+                    &:hover{
+                        width: 40px;
+                    }
+                }
+            }
+        }
+    }
+    .grupo2{
+        text-align: center;
+        color: #fff8f0;
+        font-size: 15px;
+    }
+}
+
+// Formulario de contacto
+
+.content {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.logoContacto {
+    justify-self: center;
+    text-align: center;
+    font-size: 3em;
+    color: $ColorSecundario;
+    span{
+        color: $ColorTerciario;
+    }
+}
+
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 $shadowColor;
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+.contact-form {
+    background: $ColorFormulario;
+    form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        label{
+            display: block;
+        }
+        p{
+            margin: 0;
+            padding: 1em;
+        }
+        .block{
+            grid-column: 1 / 3;
+        }
+        button, input, textarea{
+            width: 100%;
+            padding: .7em;
+            border: none;
+            background: none;
+            outline: 0;
+            color: $ColorSecundario;
+            border-bottom: 1px solid $borderColor;
+        }
+        button{
+            background: $ColorTerciario;
+            border: 0;
+            text-transform: uppercase;
+            padding: 1em;
+            &:hover, &:focus{
+                background: $shadowColor;
+                color: $ColorSecundario;
+                transition: background-color 1s ease-out;
+                outline: 0;
+            }
+        }
+    }
+}
+
+.contact-info {
+    background: #000;
+        h4, ul, p{
+            text-align: center;
+            margin: 0 0 1rem 0;
+        }
+    }
+
+    // MEDIA QUERIES
+
+    // HEADER MQ
+
+    @media (max-width: 430px){
+        .logo{
+            width: 100px;
+        }
+        header{
+            flex-direction: column;
+            align-items: center;
+        }
+        .navLinks{
+            margin-bottom: 30px;
+        }
+    }
+
+    // FOOTER MQ
+
+    @media (max-width: 830px) {
+        .logo2{
+            width: 150px;
+        }
+        .grupo1{
+            flex-direction: column;
+            align-items: center;
+            .box figure img{
+                width: 150px;
+            }
+        }
+    }
+
+    // CONTACTO MQ
+
+    @media(min-width: 700px) {
+    body {
+        padding: 0 4em;
+    }
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
+    }
+}
+
+@media(min-width: 700px) {
+    body {
+        padding: 0 4em;
+    }
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
+    }
+}
+
+@media (max-width: 991px) {
+    main div div img{
+        display: none;
+    }
+    .navLinks li{
+        display: flex;
+        flex-direction: column;
+    }
+}
+

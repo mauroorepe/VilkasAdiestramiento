@@ -1,4 +1,4 @@
-* {
+/* * {
     margin:0;
     padding: 0;
 }
@@ -13,10 +13,10 @@ html{
 body{
     font-family: 'Roboto', sans-serif;
     color: #fff8f0;
-}
+} */
 /* header */
 
-header{
+/* header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,10 +80,10 @@ button:hover{
     .navLinks{
         margin-bottom: 30px;
     }
-}
+} */
 
 /* main index*/
-
+/* 
 h1{
     font-size: 40px;
     text-align: left;
@@ -125,10 +125,10 @@ main div div div p{
     font-size: 20px;
     text-align: justify;
     margin: 15px;
-}
+} */
 
 /* pie de pagina */
-
+/* 
 .socialMedia{
     width: 30px;
 }
@@ -195,11 +195,11 @@ main div div div p{
         flex-direction: column;
         align-items: center;
     }
-}
+} */
 
 /* Formulario de contacto */
 
-body {
+/* body {
     background: #181818;
     color: #fff;
     line-height: 1.6;
@@ -284,20 +284,20 @@ ul {
     color: #fff;
     transition: background-color 1s ease-out;
     outline: 0;
-}
+} */
 
 /* CONTACT INFO */
-.contact-info {
+/* .contact-info {
     background: #000;
 }
 
 .contact-info h4, .contact-info ul, .contact-info p {
     text-align: center;
     margin: 0 0 1rem 0;
-}
+} */
 
 /* LARGE SIZE */
-@media(min-width: 700px) {
+/* @media(min-width: 700px) {
     body {
         padding: 0 4em;
     }
@@ -323,4 +323,4 @@ ul {
         display: flex;
         flex-direction: column;
     }
-}
+} */
