@@ -4,8 +4,8 @@
   padding: 0; }
 
 html {
-  font-size: 62.5%;
-  background-color: #080F0F;
+  font-size: 62,5%;
+  background-color: #080f0f;
   padding: 0; }
 
 body {
@@ -40,7 +40,7 @@ main div div {
     align-items: center; }
     main div div div h2 {
       font-size: 25px;
-      color: #080F0F; }
+      color: #181818; }
     main div div div p {
       font-size: 20px;
       text-align: justify;
@@ -54,11 +54,13 @@ header {
 
 .logo {
   cursor: pointer;
-  width: 150px; }
+  width: 150px;
+  height: 150px; }
 
 .logo2 {
   cursor: pointer;
-  width: 250px; }
+  width: 250px;
+  height: 250px; }
 
 .navLinks {
   list-style-type: none; }
@@ -104,7 +106,8 @@ button {
       justify-content: center;
       align-items: center; }
       .piePagina .grupo1 .box figure img {
-        width: 250px; }
+        width: 250px;
+        height: 250px; }
     .piePagina .grupo1 .box h2 {
       color: #fff8f0;
       margin-bottom: 10px;
@@ -179,7 +182,7 @@ ul {
         outline: 0; }
 
 .contact-info {
-  background: #000; }
+  background: black; }
   .contact-info h4, .contact-info ul, .contact-info p {
     text-align: center;
     margin: 0 0 1rem 0; }

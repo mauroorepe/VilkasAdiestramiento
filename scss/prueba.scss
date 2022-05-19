@@ -1,9 +1,19 @@
-$colorPrimario: #181818;
-$ColorSecundario: #fff8f0;
-$ColorTerciario: #B70E21;
-$ColorFormulario: #222222;
+$negro1: #181818;
+$blanco: #fff8f0;
+$rojo: #B70E21;
+$negro2: #222222;
 $shadowColor: rgba(255, 255, 255, .3);
 $borderColor: #d63031;
+
+@mixin size ($width, $height) {
+    width: $width;
+    height:$height;
+}
+
+$estilos:(
+    color:#080f0f,
+    pad:0
+    );
 
 * {
     margin:0;
@@ -13,14 +23,14 @@ $borderColor: #d63031;
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
 
 html{
-    font-size: 62.5%;
-    background-color: #080F0F;
-    padding: 0;
+    font-size: 62,5%;
+    background-color: map-get($estilos, color );
+    padding: map-get($estilos, pad );
 }
 
 body{
-    background: $colorPrimario;
-    color: $ColorSecundario;
+    background: $negro1;
+    color: $blanco;
     line-height: 1.6;
     font-family: 'Quicksand', sans-serif;
 }
@@ -32,7 +42,7 @@ h1{
     padding-top: 40px;
     margin-bottom: 50px;
     margin-left: 40px;
-    color: #fff8f0;
+    color: $blanco;
 }
 
 .cards{
@@ -48,8 +58,7 @@ main{
         div{
             margin: 40px;
             img{
-                width: 250px;
-                height: 220px;
+                @include size(250px, 220px)
             }
             div{
                 display: flex;
@@ -57,7 +66,7 @@ main{
                 align-items: center;
                 h2{
                     font-size: 25px;
-                    color: #080F0F;
+                    color: $negro1;
                 }
                 p{
                     font-size: 20px;
@@ -81,12 +90,12 @@ header{
 
 .logo{
     cursor: pointer;
-    width: 150px;
+    @include size(150px, 150px)
 }
 
 .logo2{
     cursor: pointer;
-    width: 250px;
+    @include size (250px, 250px)
 }
 
 .navLinks{
@@ -96,7 +105,7 @@ header{
         padding: 0px 20px;
         a{
             text-decoration: none;
-            color: #fff8f0;
+            color: $blanco;
             font-size: 18px;
             transition: all 0.3s ease 0s;
             &:hover{
@@ -108,7 +117,7 @@ header{
 
 button{
     text-decoration: none;
-    color: #fff8f0;
+    color: $blanco;
     font-size: 14px;
     padding: 9px 25px;
     background-color: rgba(0, 136, 169, 1);
@@ -143,11 +152,11 @@ button{
                 justify-content: center;
                 align-items: center;
                 img{
-                    width: 250px;
+                    @include size(250px, 250px)
                 }
             }
             h2{
-                color: #fff8f0;
+                color: $blanco;
                 margin-bottom: 10px;
                 margin-right: 65px;
                 margin-left: 75px;
@@ -167,7 +176,7 @@ button{
     }
     .grupo2{
         text-align: center;
-        color: #fff8f0;
+        color: $blanco;
         font-size: 15px;
     }
 }
@@ -190,9 +199,9 @@ ul {
     justify-self: center;
     text-align: center;
     font-size: 3em;
-    color: $ColorSecundario;
+    color: $blanco;
     span{
-        color: $ColorTerciario;
+        color: $rojo;
     }
 }
 
@@ -205,7 +214,7 @@ ul {
 }
 
 .contact-form {
-    background: $ColorFormulario;
+    background: $negro2;
     form{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -225,17 +234,17 @@ ul {
             border: none;
             background: none;
             outline: 0;
-            color: $ColorSecundario;
+            color: $blanco;
             border-bottom: 1px solid $borderColor;
         }
         button{
-            background: $ColorTerciario;
+            background: $rojo;
             border: 0;
             text-transform: uppercase;
             padding: 1em;
             &:hover, &:focus{
                 background: $shadowColor;
-                color: $ColorSecundario;
+                color: $blanco;
                 transition: background-color 1s ease-out;
                 outline: 0;
             }
@@ -244,7 +253,7 @@ ul {
 }
 
 .contact-info {
-    background: #000;
+    background: black;
         h4, ul, p{
             text-align: center;
             margin: 0 0 1rem 0;
