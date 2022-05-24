@@ -260,6 +260,80 @@ ul {
         }
     }
 
+// Testimonios
+
+
+.contenedorTestimonios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cardsTestimonios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #0099a9;
+    color: $blanco;
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px solid;
+    border-color:$blanco;
+    margin: 15px;
+}
+
+// Sobre Nosotros
+.usContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    h2{
+        margin-bottom: 25px;
+    }
+}
+
+.mapa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.cardsServicios{
+    background-color: #98B9AB;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    border-radius: 10px;
+    margin: 20px;
+    flex-wrap: wrap;
+    padding: 25px;
+    h2{
+        align-self: center;
+        color: $negro1;
+        margin-bottom: 25px;
+    }
+    h3{
+        color: $negro1;
+        margin: 25px;
+    }
+    ul{
+        list-style: circle;
+        margin: 25px;
+        align-self: flex-start;
+    }
+}
+
     // MEDIA QUERIES
 
     // HEADER MQ
@@ -340,3 +414,18 @@ ul {
     }
 }
 
+// Sobre Nosotros MQ
+
+@media (max-width: 699px) {
+    .mapa{
+        flex-direction: column;
+        iframe{
+            max-width: 250px;
+            max-height: 250px;
+        }
+    }
+    .descripcion{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
